@@ -73,7 +73,7 @@
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
-                <a href="#"
+                <a href="./index.html"
                     class="flex items-center toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
                     <img id="logo" src="./images/logo_blanco1.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
                 </a>
@@ -91,7 +91,8 @@
                 id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
                     <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="./index.html">Inicio</a>
+                        <a class="inline-block py-2 px-4 text-black font-bold no-underline"
+                            href="./index.html">Inicio</a>
                     </li>
                     <li class="mr-3">
                         <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
@@ -217,39 +218,42 @@
     </section>
 
     <br>
-    <div class="faq-container">
-        <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">FAQs (Preguntas
-            Frecuentes)</h2>
+    <section class="text-gray-600 body-font relative" id="faq">
+        <div class="faq-container">
+            <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">FAQs (Preguntas
+                Frecuentes)</h2>
+            <br>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo se instala el dispositivo de rastreo?
+                </div>
+                <div class="faq-answer">La instalación del dispositivo es sencilla
+                    y puede realizarse en pocos minutos. Contamos con técnicos capacitados que pueden
+                    hacerlo por ti, o puedes optar por hacerlo tú mismo si prefieres.</div>
+            </div>
 
-        <br>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo se instala el dispositivo de rastreo?</div>
-            <div class="faq-answer">La instalación del dispositivo es sencilla
-                y puede realizarse en pocos minutos. Contamos con técnicos capacitados que pueden
-                hacerlo por ti, o puedes optar por hacerlo tú mismo si prefieres.</div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿El rastreo es en tiempo real?</div>
+                <div class="faq-answer">Sí, el rastreo es en tiempo real. Puedes
+                    ver la ubicación exacta de tus vehículos o activos al instante a través de nuestra
+                    plataforma.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo acceder al sistema desde mi teléfono?
+                </div>
+                <div class="faq-answer">Sí, nuestra plataforma es completamente
+                    accesible desde cualquier dispositivo móvil, ya sea Android o iOS, a través de nuestra
+                    aplicación gratuita.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo puedo contactar con soporte?</div>
+                <div class="faq-answer">Puedes contactarnos a través de nuestra página de contacto o enviando un
+                    correo a
+                    soporte@centinela.com.</div>
+            </div>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">¿El rastreo es en tiempo real?</div>
-            <div class="faq-answer">Sí, el rastreo es en tiempo real. Puedes
-                ver la ubicación exacta de tus vehículos o activos al instante a través de nuestra
-                plataforma.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo acceder al sistema desde mi teléfono?</div>
-            <div class="faq-answer">Sí, nuestra plataforma es completamente
-                accesible desde cualquier dispositivo móvil, ya sea Android o iOS, a través de nuestra
-                aplicación gratuita.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo puedo contactar con soporte?</div>
-            <div class="faq-answer">Puedes contactarnos a través de nuestra página de contacto o enviando un correo a
-                soporte@centinela.com.</div>
-        </div>
-    </div>
-
+    </section>
     <script>
         function toggleAnswer(element) {
             const answer = element.nextElementSibling;
@@ -264,14 +268,6 @@
             }
         }
     </script>
-
-
-
-
-
-
-
-
 
 
     <br>
@@ -296,7 +292,7 @@
                     <p class="uppercase text-gray-500 md:mb-6">Links</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="./faq"
+                            <a href="./contact.html#faq"
                                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -342,7 +338,7 @@
                     <p class="uppercase text-gray-500 md:mb-6">Compañía</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="./about"
+                            <a href="./about.html"
                                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Sobre
                                 nosotros</a>
                         </li>
@@ -354,7 +350,8 @@
                 </div>
             </div>
         </div>
-        <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Derechos de autor © 2024
+        <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Derechos de autor ©
+            2024
             Joffre Albán</a>
     </footer>
     <!-- jQuery if you need it
