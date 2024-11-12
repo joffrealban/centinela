@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+        Centinela - Pon la tecnología a tu favor!
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/IconCentinela180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/IconCentinela32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/IconCentinela32.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #0284c7 0%, #ea580c 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 leading-normal tracking-normal text-white gradient"
+    style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <script src="config.js"></script>
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+            <div class="pl-4 flex items-center">
+                <a href="#"
+                    class="flex items-center toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                    <img id="logo" src="./images/logo_blanco1.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle"
+                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-black font-bold no-underline"
+                            href="./index.html">Inicio</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="./about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="./services.html">Servicios</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="./contact.html">Contáctatos</a>
+                    </li>
+                </ul>
+                <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                    href="/login.html">
+                    <button id="navAction"
+                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Plataforma
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sección de Servicios -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Nuestros Servicios</h2>
+            <p class="text-gray-600 mb-12">Ofrecemos soluciones avanzadas de rastreo satelital para proteger y
+                monitorear tus activos en tiempo real.</p>
+
+            <div class="flex flex-wrap -mx-4">
+                <!-- Servicio 1 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Rastreo en Tiempo Real</h3>
+                        <p class="text-gray-600 mt-4">Monitorea la ubicación de tus activos 24/7 con precisión satelital
+                            y visualización en tiempo real.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3v18h18M3 3l18 18"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Geocercas</h3>
+                        <p class="text-gray-600 mt-4">Define áreas específicas y recibe alertas cuando tus activos
+                            entren o salgan de ellas.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Alertas y Notificaciones</h3>
+                        <p class="text-gray-600 mt-4">Recibe notificaciones en caso de movimientos no autorizados o
+                            eventos importantes.</p>
+                    </div>
+                </div>
+
+                <!-- Historial de Rutas -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m-6-8h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Historial de Rutas</h3>
+                        <p class="text-gray-600 mt-4">Accede al historial de rutas de tus activos, revisa
+                            desplazamientos previos y genera informes detallados.</p>
+                    </div>
+                </div>
+
+                <!-- Generación de Reportes -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Generación de Reportes</h3>
+                        <p class="text-gray-600 mt-4">Obtén informes detallados sobre el rendimiento de tus activos,
+                            optimiza rutas y tiempos de operación.</p>
+                    </div>
+                </div>
+
+                <!-- Soporte Técnico -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v1m0 4v1m0 4v1m0 4v1m-5 5h10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Soporte Técnico</h3>
+                        <p class="text-gray-600 mt-4">Accede a soporte técnico 24/7 para resolver cualquier problema y
+                            asegurar el correcto funcionamiento del sistema.</p>
+                    </div>
+                </div>
+
+                <div class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Diagnóstico Remoto -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m5-5l5 5m-5 5V4m0 8h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Diagnóstico Remoto</h3>
+                        <p class="text-gray-600 mt-4">Realiza diagnósticos en tiempo real de tus activos para detectar problemas mecánicos o eléctricos.</p>
+                    </div>
+                
+                    <!-- Gestión de Combustible -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-700 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8V4m4 16h4m-4 0H8m12 0l4-4-4-4m-4 4H8M8 20l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Gestión de Combustible</h3>
+                        <p class="text-gray-600 mt-4">Monitorea el consumo de combustible en tiempo real y optimiza el rendimiento de tus vehículos.</p>
+                    </div>
+                
+                    <!-- Optimización de Rutas -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 21H4a2 2 0 01-2-2V5c0-1.1.9-2 2-2h4l2-2h4l2 2h4c1.1 0 2 .9 2 2v14a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Optimización de Rutas</h3>
+                        <p class="text-gray-600 mt-4">Planifica rutas eficientes para reducir el tiempo de viaje y ahorrar en combustible.</p>
+                    </div>
+                
+                    <!-- Control de Velocidad -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-700 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M9 16h6M4 6h4m-2 2v12m14-12h-4m2 2v12"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Control de Velocidad</h3>
+                        <p class="text-gray-600 mt-4">Monitorea y limita la velocidad de tus vehículos para mejorar la seguridad y reducir el riesgo de accidentes.</p>
+                    </div>
+                
+                    <!-- Mantenimiento Predictivo -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-700 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v4h-8V4m1 14h6m4 0h4m-6 0v-4m0-4h4m0-4h4m-12 8H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Mantenimiento Predictivo</h3>
+                        <p class="text-gray-600 mt-4">Previene fallas anticipando el mantenimiento de tus activos en base a datos históricos y de uso.</p>
+                    </div>
+                
+                    <!-- Registro de Temperatura -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-teal-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9V3a3 3 0 00-3-3m6 6v6a3 3 0 01-6 0V3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Registro de Temperatura</h3>
+                        <p class="text-gray-600 mt-4">Supervisa la temperatura de cargas sensibles para garantizar condiciones óptimas durante el transporte.</p>
+                    </div>
+                
+                    <!-- Gestión de Activos -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pink-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16h6M12 8v10m2-4a6 6 0 00-4 0"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Gestión de Activos</h3>
+                        <p class="text-gray-600 mt-4">Organiza y clasifica tus activos para facilitar su gestión y maximizar el rendimiento de cada uno.</p>
+                    </div>
+                
+                    <!-- Estado del Tráfico en Vivo -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-500 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V8m6 12H5a2 2 0 01-2-2V6a2 2 0 012-2h4m6 12v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Estado del Tráfico en Vivo</h3>
+                        <p class="text-gray-600 mt-4">Recibe actualizaciones en tiempo real sobre el estado del tráfico y ajusta las rutas en consecuencia.</p>
+                    </div>
+                
+                    <!-- Monitoreo de Paradas -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-700 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12H2v6h6V12zm14-4h-6v10h6V8zm-9 6h-6v6h6v-6zm6-12H2v6h6V2h10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Monitoreo de Paradas</h3>
+                        <p class="text-gray-600 mt-4">Realiza un seguimiento detallado de las paradas y tiempos de inactividad de tus activos.</p>
+                    </div>
+
+                    
+                </div>
+                <div class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Encendido y Apagado del Vehículo -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3a1 1 0 00-2 0v7m2 4v7a1 1 0 01-2 0v-7m-4 1h10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Encendido y Apagado del Vehículo</h3>
+                        <p class="text-gray-600 mt-4">Monitorea y controla el encendido y apagado remoto del vehículo para mayor seguridad y gestión de recursos.</p>
+                    </div>
+                
+                    <!-- Desconexión de Batería -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m0 0V4a2 2 0 00-2-2H9a2 2 0 00-2 2v8m10 0v8a2 2 0 002 2h4a2 2 0 002-2v-8"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Desconexión de Batería</h3>
+                        <p class="text-gray-600 mt-4">Recibe alertas inmediatas en caso de desconexión de batería para prevenir incidentes y robos.</p>
+                    </div>
+                
+                    <!-- Creación de Sub-Usuarios -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 14c2 0 3 2 3 4 0 1 1 2 2 2h4c1 0 2-1 2-2 0-2 1-4 3-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Creación de Sub-Usuarios</h3>
+                        <p class="text-gray-600 mt-4">Crea sub-usuarios con permisos personalizados para mejorar la administración de la flota.</p>
+                    </div>
+                
+                    <!-- Vencimiento de Documentos -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-teal-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6v16m8-10h4m-4 4h4m-4 4h4m-4-8h4M4 6h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Vencimiento de Documentos</h3>
+                        <p class="text-gray-600 mt-4">Gestiona la fecha de vencimiento de documentos importantes para evitar sanciones o retrasos.</p>
+                    </div>
+                
+                    <!-- Software de Administración de Flota -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Software de Administración de Flota</h3>
+                        <p class="text-gray-600 mt-4">Optimiza la gestión de tu flota con herramientas avanzadas de administración y monitoreo.</p>
+                    </div>
+                
+                    <!-- Dashboard Interactivo -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-600 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 12h18M3 21h18"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Dashboard Interactivo</h3>
+                        <p class="text-gray-600 mt-4">Visualiza y administra los datos de tu flota en un dashboard interactivo y de fácil uso.</p>
+                    </div>
+                
+                    <!-- Link de Seguimiento para Terceros -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-700 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Link de Seguimiento para Terceros</h3>
+                        <p class="text-gray-600 mt-4">Genera un enlace de seguimiento para permitir a terceros monitorear la ubicación de tus activos.</p>
+                    </div>
+                
+                    <!-- Botón de Pánico (Opcional) -->
+                    <div class="bg-gray-100 rounded-lg p-8 hover:bg-indigo-100 transition duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-500 mb-6 mx-auto">
+                            <svg class="text-white h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Botón de Pánico (Opcional)</h3>
+                        <p class="text-gray-600 mt-4">Activa el botón de pánico para alertar a las autoridades o al equipo de seguridad en caso de emergencia.</p>
+                    </div>
+                
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <!--Footer-->
+    <footer class="bg-white">
+        <div class="container mx-auto px-8">
+            <div class="w-full flex flex-col md:flex-row py-6">
+                <div class="flex-1 mb-6 text-black">
+                    <div class="pl-4 flex items-center">
+                        <a href="./index.html"
+                            class="flex items-center toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <img id="logo" src="./images/logo_1.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase text-gray-500 md:mb-6">Links</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="./faq"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Ayuda</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="./contact.html"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Soporte</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terminos</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase text-gray-500 md:mb-6">Redes Sociales</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase text-gray-500 md:mb-6">Compañía</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="./about"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Sobre
+                                nosotros</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="./contact.html"
+                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Derechos de autor © 2024
+            Joffre Albán</a>
+    </footer>
+
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
+        var navaction = document.getElementById("navAction");
+        var brandname = document.getElementById("brandname");
+        var toToggle = document.querySelectorAll(".toggleColour");
+
+        document.addEventListener("scroll", function () {
+            /*Apply classes for slide in bar*/
+            scrollpos = window.scrollY;
+
+            if (scrollpos > 10) {
+                header.classList.add("bg-white");
+                navaction.classList.remove("bg-white");
+                navaction.classList.add("gradient");
+                navaction.classList.remove("text-gray-800");
+                navaction.classList.add("text-white");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-gray-800");
+                    toToggle[i].classList.remove("text-white");
+                }
+                header.classList.add("shadow");
+                navcontent.classList.remove("bg-gray-100");
+                navcontent.classList.add("bg-white");
+            } else {
+                header.classList.remove("bg-white");
+                navaction.classList.remove("gradient");
+                navaction.classList.add("bg-white");
+                navaction.classList.remove("text-white");
+                navaction.classList.add("text-gray-800");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-white");
+                    toToggle[i].classList.remove("text-gray-800");
+                }
+
+                header.classList.remove("shadow");
+                navcontent.classList.remove("bg-white");
+                navcontent.classList.add("bg-gray-100");
+            }
+        });
+    </script>
+</body>
+
+</html>
